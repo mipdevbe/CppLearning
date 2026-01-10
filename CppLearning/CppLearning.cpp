@@ -5,6 +5,8 @@
 #include <cstring> // required for C-style string functions
 #include <string> // Add this include at the top of your file
 #include <utility> // for std::move
+#include "Person.h"
+#include "Student.h"
 
 using namespace std;
 
@@ -218,6 +220,13 @@ int main()
 
 	MyClass o5  = o - o4;
 	cout << "Value of x in MyClass after operator-: " << o5.getX() << endl;
+
+	Person person("Alice", 30);
+	cout << "Person Name: " << person.getName() << ", Age: " << person.getAge() << endl;
+	Student student("Bob", 20, 3);
+	cout << "Student Name: " << student.getName() << ", Age: " << student.getAge() << ", Semester: " << student.getSemester() << endl;
+
+
 	return 0;	
 }
 
