@@ -8,6 +8,7 @@
 #include "Person.h"
 #include "Student.h"
 #include "MyTemplate.h"
+#include "MyEnum.h"
 
 using namespace std;
 
@@ -241,6 +242,10 @@ int main()
 	cout << "MyTemplate value (int): " << myIntTemplate.getValue() << endl;
 	MyTemplate<string> myStringTemplate("Hello Template");
 	cout << "MyTemplate value (string): " << myStringTemplate.getValue() << endl;
+
+	MyEnum myEnum = MyEnum::mySecondValue;
+
+	person.myIterationExample();
 
 	return 0;	
 }

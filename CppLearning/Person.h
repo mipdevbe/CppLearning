@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -7,6 +8,7 @@ class Person
 {
 private:
 	string name;
+	static int personCount;
 
 public:
 	// explicit prevents the constructor from being used for implicit conversions and copy - initialization.
@@ -25,5 +27,11 @@ public:
 		return name;
 	}
 
-};
+	void myIterationExample() const {
+		for (int i = 0; i < 5; i++) {
+			Person::personCount++;
+		}
 
+		cout << "Total persons counted: " << Person::personCount << endl;
+	}
+};
