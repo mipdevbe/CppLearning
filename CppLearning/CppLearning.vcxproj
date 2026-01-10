@@ -124,10 +124,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CppLearning.cpp" />
+    <ClCompile Include="MyTemplate.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyTemplate.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Student.h" />
   </ItemGroup>

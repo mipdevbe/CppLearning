@@ -7,6 +7,7 @@
 #include <utility> // for std::move
 #include "Person.h"
 #include "Student.h"
+#include "MyTemplate.h"
 
 using namespace std;
 
@@ -90,6 +91,11 @@ public:
 	int getX() const
 	{
 		return x;
+	}
+
+	static void staticFunctionExample()
+	{
+		cout << "This is a static function example." << endl;
 	}
 };
 
@@ -221,11 +227,20 @@ int main()
 	MyClass o5  = o - o4;
 	cout << "Value of x in MyClass after operator-: " << o5.getX() << endl;
 
-	Person person("Alice", 30);
-	cout << "Person Name: " << person.getName() << ", Age: " << person.getAge() << endl;
-	Student student("Bob", 20, 3);
-	cout << "Student Name: " << student.getName() << ", Age: " << student.getAge() << ", Semester: " << student.getSemester() << endl;
+	// Inheritance example
+	Person person("Alice");
+	cout << "Person Name: " << person.getName() << endl;
+	Student student("Bob", 3);
+	cout << "Student Name: " << student.getName() << ", Semester: " << student.getSemester() << endl;
 
+	// Static function call example
+	MyClass::staticFunctionExample();
+
+	// Template class example
+	MyTemplate<int> myIntTemplate(42);
+	cout << "MyTemplate value (int): " << myIntTemplate.getValue() << endl;
+	MyTemplate<string> myStringTemplate("Hello Template");
+	cout << "MyTemplate value (string): " << myStringTemplate.getValue() << endl;
 
 	return 0;	
 }
