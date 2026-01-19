@@ -9,13 +9,14 @@
 #include "Student.h"
 #include "MyTemplate.h"
 #include "MyEnum.h"
+#include "MyStaticCast.h"
 
 using namespace std;
 
 #define LENGTH(x) (sizeof(x) / sizeof(x[0]))
 
 // Function example
-void customMessage(const string& message)
+static void customMessage(const string& message)
 {
 	cout << message << endl;
 }
@@ -100,6 +101,10 @@ public:
 	}
 };
 
+int mainTemplate();
+int mainSmartPointer();
+int mainStaticCast();
+int mainStream();
 
 int main()
 {
@@ -234,18 +239,19 @@ int main()
 	Student student("Bob", 3);
 	cout << "Student Name: " << student.getName() << ", Semester: " << student.getSemester() << endl;
 
+	// Person pers = { "Bob" }; error due to explicit constructor
+	Student student2 = { "Bob", 3 };
 	// Static function call example
 	MyClass::staticFunctionExample();
 
 	// Template class example
-	MyTemplate<int> myIntTemplate(42);
-	cout << "MyTemplate value (int): " << myIntTemplate.getValue() << endl;
-	MyTemplate<string> myStringTemplate("Hello Template");
-	cout << "MyTemplate value (string): " << myStringTemplate.getValue() << endl;
-
-	MyEnum myEnum = MyEnum::mySecondValue;
+	mainTemplate();
 
 	person.myIterationExample();
+
+	mainStaticCast();
+	mainSmartPointer();
+	mainStream();
 
 	return 0;	
 }

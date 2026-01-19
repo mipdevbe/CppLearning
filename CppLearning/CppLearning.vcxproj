@@ -125,12 +125,18 @@
   <ItemGroup>
     <ClCompile Include="CppLearning.cpp" />
     <ClCompile Include="MyEnum.cpp" />
+    <ClCompile Include="MySmartPointer.cpp" />
+    <ClCompile Include="MyStaticCast.cpp" />
+    <ClCompile Include="MyStream.cpp" />
     <ClCompile Include="MyTemplate.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyEnum.h" />
+    <ClInclude Include="MySmartPointer.h" />
+    <ClInclude Include="MyStaticCast.h" />
+    <ClInclude Include="MyStream.h" />
     <ClInclude Include="MyTemplate.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Student.h" />
