@@ -126,6 +126,8 @@
     <ClCompile Include="CppLearning.cpp" />
     <ClCompile Include="MyAlgorithm.cpp" />
     <ClCompile Include="MyEnum.cpp" />
+    <ClCompile Include="MyLambda.cpp" />
+    <ClCompile Include="MySemantic.cpp" />
     <ClCompile Include="MySmartPointer.cpp" />
     <ClCompile Include="MyStandardLibrary.cpp" />
     <ClCompile Include="MyStaticCast.cpp" />
@@ -137,6 +139,8 @@
   <ItemGroup>
     <ClInclude Include="MyAlgorithm.h" />
     <ClInclude Include="MyEnum.h" />
+    <ClInclude Include="MyLambda.h" />
+    <ClInclude Include="MySemantic.h" />
     <ClInclude Include="MySmartPointer.h" />
     <ClInclude Include="MyStandardLibrary.h" />
     <ClInclude Include="MyStaticCast.h" />

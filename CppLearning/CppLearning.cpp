@@ -12,6 +12,8 @@
 #include "MyStaticCast.h"
 #include "MyStandardLibrary.h"
 #include "MyAlgorithm.h"
+#include "MyLambda.h"
+#include "MySemantic.h"
 
 using namespace std;
 
@@ -109,6 +111,8 @@ int mainStaticCast();
 int mainStream();
 int mainStandardLibrary();
 int mainAlgorithm();
+int mainLambda();
+int mainSemantic();
 
 int main()
 {
@@ -258,7 +262,8 @@ int main()
 	mainStream();
 	mainStandardLibrary();
 	mainAlgorithm();
-
+	mainLambda();
+	mainSemantic();
 	return 0;	
 }
 
