@@ -124,8 +124,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CppLearning.cpp" />
+    <ClCompile Include="MyAlgorithm.cpp" />
     <ClCompile Include="MyEnum.cpp" />
     <ClCompile Include="MySmartPointer.cpp" />
+    <ClCompile Include="MyStandardLibrary.cpp" />
     <ClCompile Include="MyStaticCast.cpp" />
     <ClCompile Include="MyStream.cpp" />
     <ClCompile Include="MyTemplate.cpp" />
@@ -133,8 +135,10 @@
     <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyAlgorithm.h" />
     <ClInclude Include="MyEnum.h" />
     <ClInclude Include="MySmartPointer.h" />
+    <ClInclude Include="MyStandardLibrary.h" />
     <ClInclude Include="MyStaticCast.h" />
     <ClInclude Include="MyStream.h" />
     <ClInclude Include="MyTemplate.h" />

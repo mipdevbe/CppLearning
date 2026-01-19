@@ -10,6 +10,8 @@
 #include "MyTemplate.h"
 #include "MyEnum.h"
 #include "MyStaticCast.h"
+#include "MyStandardLibrary.h"
+#include "MyAlgorithm.h"
 
 using namespace std;
 
@@ -105,6 +107,8 @@ int mainTemplate();
 int mainSmartPointer();
 int mainStaticCast();
 int mainStream();
+int mainStandardLibrary();
+int mainAlgorithm();
 
 int main()
 {
@@ -252,6 +256,8 @@ int main()
 	mainStaticCast();
 	mainSmartPointer();
 	mainStream();
+	mainStandardLibrary();
+	mainAlgorithm();
 
 	return 0;	
 }
