@@ -14,6 +14,10 @@
 #include "MyAlgorithm.h"
 #include "MyLambda.h"
 #include "MySemantic.h"
+#include "MyExplicit.h"
+#include "MyVector.h"
+#include "MySet.h"
+#include "MyMap.h"
 
 using namespace std;
 
@@ -113,6 +117,10 @@ int mainStandardLibrary();
 int mainAlgorithm();
 int mainLambda();
 int mainSemantic();
+int mainExplicit();
+int mainVector();
+int mainSet();
+int mainMap();
 
 int main()
 {
@@ -264,6 +272,11 @@ int main()
 	mainAlgorithm();
 	mainLambda();
 	mainSemantic();
+	mainExplicit();
+	mainVector();
+	mainSet();
+	mainMap();
+
 	return 0;	
 }
 

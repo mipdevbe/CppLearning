@@ -102,6 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +117,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,26 +128,36 @@
     <ClCompile Include="CppLearning.cpp" />
     <ClCompile Include="MyAlgorithm.cpp" />
     <ClCompile Include="MyEnum.cpp" />
+    <ClCompile Include="MyExplicit.cpp" />
+    <ClCompile Include="MyExpressionsLambda.cpp" />
     <ClCompile Include="MyLambda.cpp" />
+    <ClCompile Include="MyMap.cpp" />
     <ClCompile Include="MySemantic.cpp" />
+    <ClCompile Include="MySet.cpp" />
     <ClCompile Include="MySmartPointer.cpp" />
     <ClCompile Include="MyStandardLibrary.cpp" />
     <ClCompile Include="MyStaticCast.cpp" />
     <ClCompile Include="MyStream.cpp" />
     <ClCompile Include="MyTemplate.cpp" />
+    <ClCompile Include="MyVector.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyAlgorithm.h" />
     <ClInclude Include="MyEnum.h" />
+    <ClInclude Include="MyExplicit.h" />
+    <ClInclude Include="MyExpressionsLambda.h" />
     <ClInclude Include="MyLambda.h" />
+    <ClInclude Include="MyMap.h" />
     <ClInclude Include="MySemantic.h" />
+    <ClInclude Include="MySet.h" />
     <ClInclude Include="MySmartPointer.h" />
     <ClInclude Include="MyStandardLibrary.h" />
     <ClInclude Include="MyStaticCast.h" />
     <ClInclude Include="MyStream.h" />
     <ClInclude Include="MyTemplate.h" />
+    <ClInclude Include="MyVector.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Student.h" />
   </ItemGroup>
