@@ -18,6 +18,13 @@
 #include "MyVector.h"
 #include "MySet.h"
 #include "MyMap.h"
+#include "MyExpressionsLambda.h"
+#include "MyScopedEnum.h"
+#include "MyUnorderedSet.h"
+#include "MyUnorderedMap.h"
+#include "MyTuple.h"
+#include "MyStaticAssert.h"
+#include "MyConcurrency.h"
 
 using namespace std;
 
@@ -121,6 +128,13 @@ int mainExplicit();
 int mainVector();
 int mainSet();
 int mainMap();
+int mainExpressionsLambda();
+int mainScopedEnum();
+int mainUnorderedSet();
+int mainUnorderedMap();
+int mainTuple();
+int mainStaticAssert();
+int mainConcurrency();
 
 int main()
 {
@@ -276,7 +290,13 @@ int main()
 	mainVector();
 	mainSet();
 	mainMap();
+	mainExpressionsLambda();
+	mainScopedEnum();
+	mainUnorderedSet();
+	mainUnorderedMap();
+	mainTuple();
+	mainStaticAssert();
+	mainConcurrency();
 
 	return 0;	
 }
-

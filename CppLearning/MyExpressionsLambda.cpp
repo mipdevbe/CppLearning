@@ -10,6 +10,8 @@ using namespace std;
 
 int mainExpressionsLambda()
 {
+	cout << " *** Expressions Lambda section ***\n";
+
 	vector<int> v = { 5, 10, 4, 1, 3, 15 };
 	sort(v.begin(), v.end(), [](int x, int y) { return x > y; });
 
@@ -25,6 +27,11 @@ int mainExpressionsLambda()
 
 	cout << "Local value = " << x << endl;
 	auto myLambda = [&x]() { x++; };
+
+	myLambda();
+
+	cout << "The lambda has taken and loaded the local variable : " << x << endl;
+	cout << "The lambda has taken and loaded the local variable : " << x << endl;
 
 	return 0;
 }
