@@ -25,6 +25,11 @@
 #include "MyTuple.h"
 #include "MyStaticAssert.h"
 #include "MyConcurrency.h"
+#include "MyAlias.h"
+#include "MyAutoForFunction.h"
+#include "MyGenericLambda.h"
+#include "MyConstexprLambda.h"
+#include "MyStructuredBindings.h"
 
 using namespace std;
 
@@ -135,6 +140,12 @@ int mainUnorderedMap();
 int mainTuple();
 int mainStaticAssert();
 int mainConcurrency();
+int mainAlias();
+int mainLiteralsBinaries();
+int mainAutoForFunction();
+int mainGenericLambda();
+int mainConstexprLambda();
+int mainStructuredBindings();
 
 int main()
 {
@@ -297,6 +308,12 @@ int main()
 	mainTuple();
 	mainStaticAssert();
 	mainConcurrency();
+	mainAlias();
+	mainLiteralsBinaries();
+	mainAutoForFunction();
+	mainGenericLambda();
+	mainConstexprLambda();
+	mainStructuredBindings();
 
 	return 0;	
 }

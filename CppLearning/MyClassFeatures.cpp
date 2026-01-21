@@ -28,14 +28,34 @@ public:
 	}
 };
 
+class MyClassD
+{
+public:
+
+	MyClassD()
+	{
+		cout << "MyClassD constructor invoked\n";
+	}
+
+	MyClassD(const MyClassD& other) = delete;  // Delete the copy constructor
+
+	MyClassD& operator = (const MyClassD& other) = delete; // Delete the copy assignment
+};
+
 int mainClassFeatures()
 {
-	cout << " *** Class Featuressection ***\n";
+	cout << " *** Class Features section ***\n";
 
 	MyClassA a; // ok, there is a default constructor.
 	// MyClassB b; // error, no default constructor.
 	MyClassC c; // now ok, default constructor has been specified
 	MyClassC c2 = c;
+
+	MyClassD d;
+
+	//MyClassD d2 = d;	// Error copy constructor has been deleted
+	MyClassD d3;
+	//d3 = d;				// Error copy assignment has been deleted
 
 	return 0;
 }

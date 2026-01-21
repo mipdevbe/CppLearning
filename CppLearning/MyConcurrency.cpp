@@ -6,13 +6,13 @@
 
 using namespace std;
 
-mutex m;
+mutex gmutex;
 
-void myFunction(const string& param)
+void MyFunction(const string& param)
 {
 	for (int i = 0; i < 5; i++)
 	{
-		lock_guard<mutex> lg(m);
+		lock_guard<mutex> lg(gmutex);
 		cout << "Execution de la fonction depuis le " << param << "\n";
 	}
 }
@@ -21,8 +21,8 @@ int mainConcurrency()
 {
 	cout << " *** Concurrency section ***\n";
 
-	thread t1(myFunction);
-	thread t2(myFunction);
+	thread t1(MyFunction, "Thread 1");
+	thread t2(MyFunction, "Thread 2");
 
 	t1.join();
 	t2.join();

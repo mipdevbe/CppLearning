@@ -127,12 +127,17 @@
   <ItemGroup>
     <ClCompile Include="CppLearning.cpp" />
     <ClCompile Include="MyAlgorithm.cpp" />
+    <ClCompile Include="MyAlias.cpp" />
+    <ClCompile Include="MyAutoForFunction.cpp" />
     <ClCompile Include="MyClassFeatures.cpp" />
     <ClCompile Include="MyConcurrency.cpp" />
+    <ClCompile Include="MyConstexprLambda.cpp" />
     <ClCompile Include="MyEnum.cpp" />
     <ClCompile Include="MyExplicit.cpp" />
     <ClCompile Include="MyExpressionsLambda.cpp" />
+    <ClCompile Include="MyGenericLambda.cpp" />
     <ClCompile Include="MyLambda.cpp" />
+    <ClCompile Include="MyLiteralsBinaries.cpp" />
     <ClCompile Include="MyMap.cpp" />
     <ClCompile Include="MyScopedEnum.cpp" />
     <ClCompile Include="MySemantic.cpp" />
@@ -142,6 +147,7 @@
     <ClCompile Include="MyStaticAssert.cpp" />
     <ClCompile Include="MyStaticCast.cpp" />
     <ClCompile Include="MyStream.cpp" />
+    <ClCompile Include="MyStructuredBindings.cpp" />
     <ClCompile Include="MyTemplate.cpp" />
     <ClCompile Include="MyTuple.cpp" />
     <ClCompile Include="MyUnorderedMap.cpp" />
@@ -152,12 +158,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyAlgorithm.h" />
+    <ClInclude Include="MyAlias.h" />
+    <ClInclude Include="MyAutoForFunction.h" />
     <ClInclude Include="MyClassFeatures.h" />
     <ClInclude Include="MyConcurrency.h" />
+    <ClInclude Include="MyConstexprLambda.h" />
     <ClInclude Include="MyEnum.h" />
     <ClInclude Include="MyExplicit.h" />
     <ClInclude Include="MyExpressionsLambda.h" />
+    <ClInclude Include="MyGenericLambda.h" />
     <ClInclude Include="MyLambda.h" />
+    <ClInclude Include="MyLiteralsBinaries.h" />
     <ClInclude Include="MyMap.h" />
     <ClInclude Include="MyScopedEnum.h" />
     <ClInclude Include="MySemantic.h" />
@@ -167,6 +178,7 @@
     <ClInclude Include="MyStaticAssert.h" />
     <ClInclude Include="MyStaticCast.h" />
     <ClInclude Include="MyStream.h" />
+    <ClInclude Include="MyStructuredBindings.h" />
     <ClInclude Include="MyTemplate.h" />
     <ClInclude Include="MyTuple.h" />
     <ClInclude Include="MyUnorderedMap.h" />
